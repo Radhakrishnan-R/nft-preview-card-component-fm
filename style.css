@@ -1,0 +1,132 @@
+body{
+    
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+img{
+    vertical-align:middle;
+}
+
+.container{
+    width: 250px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.image-holder{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-holder > div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: hsla(178, 100%, 50%, 0.486);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.15s;
+    
+}
+
+.image-holder:hover div{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-holder > img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.15s;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.459);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    
+}
+
+.price-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: normal;
+}
+
+.price-holder img{
+    width: 8px;
+    margin-right: 5px;
+}
+
+.price-holder > .ethereum{
+    color: hsl(178, 100%, 50%);
+}
+
+.days > img{
+    width: 14px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+.author-holder{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.author-holder >img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.author-holder  span{
+    color: white;
+    transition: color 0.15s;
+}
+
+.author-holder  span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media (max-width:450px){
+    body{
+        height: auto;
+    }
+
+    .container{
+        margin-bottom: 10px;
+    }
+}
